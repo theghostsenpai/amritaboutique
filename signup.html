@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+
+  <link rel="stylesheet" href="styleSignUp.css">
+  <script src="app.js"></script>
+
+  <div class="header">
+    <div class="col" id="title">
+      Amrita's Boutique
+    </div>
+    <div class="col">
+      <ul id="nav">
+        <li class="nav"><a href="index.html">Home</a></li>
+        <li class="nav"><a href="#">Menu</a></li>
+        <li class="nav"><a href="#">Cart</a></li>
+        <li class="nav"><a href="#">About Us</a></li>
+      </ul>
+    </div>    
+    <div class="col">      
+    </div>
+  </div>  
+</head>
+
+<body>
+
+  <div id="container">
+    <form id="signup-form" onsubmit= "return submitform()">
+      <table id="block">
+        <caption>Sign Up</caption>
+        <tr>
+          <td class="col2">
+            <label for="firstName">First Name:*</label>
+          </td>
+          <td class="col2">
+            <input type="text" name="firstName" id="firstName" placeholder="Enter your First Name" pattern="^[a-zA-Z]{1,20}$" >
+          </td>
+        </tr>
+        <tr>
+          <td class="col2">
+            <label for="lastName">Last Name:*</label>
+          </td>
+          <td class="col2">
+            <input type="text" name="lastName" id="lastName" placeholder="Enter your Last Name" pattern="^[a-zA-Z]{1,20}$" ></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="col2">
+            <label for="emailid">Email id:*</label>
+          </td>
+          <td class="col2">
+            <input type="email" name="emailid" id="emailid" placeholder="abc@xyz.com" >
+          </td>
+        </tr>
+        <tr>
+          <td class="col2"><label for="gender">Select Gender:</label></td>
+          <td class="col2">
+            <input type="radio" name="gender" id="Male" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" id="Female" value="Female">
+            <label for="Female">Female</label>
+            <input type="radio" name="gender" id="Other" value="Other">
+            <label for="Other">Other</label>
+          </td>
+        </tr>
+        <tr>
+          <td class="col2">
+            <label for="phno">Phone Number:</label>
+          </td>
+          <td class="col2"><input type="tel" name="phno" id="phno" placeholder="Enter Phone No"></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" id="submit" value="Submit">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <div id="result"></div>
+
+</body>
+</html>
